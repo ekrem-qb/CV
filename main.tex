@@ -1,191 +1,385 @@
-\documentclass{article}
-\usepackage{bubblecv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
 \usepackage[normalem]{ulem}
+
+%----------------------------------------------------------------------------------------
 
 \begin{document}
 
-\begin{cv}[avatar]{Ekrem Bayram}{Software Engineer}
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
 
+\begin{minipage}[t]{0.40\textwidth} % 40% of the page width for name
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
 
-    \cvsection[summary]{About Me}  %-----------------------------------------------------------
+    % If your name is very short, use just one of the lines below
+    % If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+    \colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Ekrem}}}}} % First name
 
-    My introduction to programming began in the 6th grade with BASIC. Subsequently, I acquired skills in HTML and CSS. During high school, I developed several applications using C\#, Microsoft SQL, and Windows Forms, some of which are available on my GitHub page. A summer school program provided the opportunity to work with Arduino, where I engineered a two-wheeled robot utilizing an ultrasonic sensor, a light-sensitive device that automated a lamp, and developed several games on a small LCD screen, including Snake, Pong, etc. Additionally, I expanded my knowledge to include JavaScript and created multiple websites, most of which are also accessible on my GitHub page.
+    \colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Bayram}}}}} % Last name
 
-    Growing up in Kazakhstan, I became fluent in Russian and have translated several applications into Russian, English, and Turkish, including \href{https://www.github.com/user-grinch/Cheat-Menu}{\uline{Cheat Menu}}, \href{https://www.play.google.com/store/apps/details?id=xeus.iconic}{\uline{Iconic}}, \href{https://www.polkuijken.medium.com/case-study-peek-launcher-220f0e505d51}{\uline{Peek Launcher}}, etc.
+    \vspace{6pt}
 
-    My larger projects are listed on my \href{https://www.linkedin.com/in/ekrem-qb/details/projects}{\uline{LinkedIn}}.
+    {\huge Software Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
 
-    \cvsection[work]{Work experience}  %------------------------------------------------------
+    % The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+    % Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+    \icon{MapMarker}{12}{Antalya, Turkey}\\
+    \icon{Phone}{12}{\href{tel:+905511819587}{{+90 551 181 9587}}}\\
+\end{minipage}
+\begin{minipage}[t]{0.325\textwidth} % 32.5% of the page width for the second row of icons
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
 
-    \begin{cvevent}[2020][present]
-        \cvname{Game Developer}
-        \cvdescription{Enot Games}
-        \begin{itemize}
-            \item Unity 3D
-            \item C\#
-            \item Unreal Engine
-        \end{itemize}
-    \end{cvevent}
+    % The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+    % Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+    \icon{Github}{12}{\href{https://www.github.com/ekrem-qb}{github.com/ekrem-qb}}\\
+    \icon{At}{12}{\href{mailto:bayram.ekrem.007@gmail.com}{bayram.ekrem.007@gmail.com}}\\
+\end{minipage}
 
-    \cvseparator[2]
-    \begin{cvevent}[2019][2020]
-        \cvname{Assistant Database Engineer}
-        \cvdescription{Akdeniz Elektrik Dağıtım A.Ş.}
-        \begin{itemize}
-            \item Microsoft SQL Server
-            \item C\#
-            \item WinForms
-        \end{itemize}
-    \end{cvevent}
+\vspace{0.5cm}
 
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
 
-    \cvsection[education]{Education}  %------------------------------------------------------
+\begin{minipage}[t]{0.65\textwidth}
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
 
-    \begin{cvevent}[2021][present]
-        \cvname{Akdeniz University}
-        \cvdescription{Bachelor of Engineering}
-        \textbf{Additional Courses:}
-        \begin{itemize}
-            \item Unity 3D
-            \item Arduino
-            \item Game Art
-        \end{itemize}
-    \end{cvevent}
+    \cvsect{Programming Skills}
 
-    \cvsidebar %-----------------------------------------------------------------------------
+    Git •
+    Flutter •
+    Dart •
+    C\# •
+    Unity 3D •
+    JavaScript •
+    HTML •
+    CSS •
+    Supabase •
+    SQL •
+    Firebase •
+    REST API •
+    WebSocket •
+    GraphQL •
+    Docker •
+    NodeJS •
+    ElectronJS •
+    LaTeX •
+    Arduino •
+    Unreal Engine •
+    C •
+    C++
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
 
+    \cvsect{Languages}
 
-    \cvsection[contact]{Contact}  %----------------------------------------------------------
+    \textbf{Russian} - Native\\
+    \textbf{Turkish} - Proficient\\
+    \textbf{English} - Upper-Intermediate
+\end{minipage}
 
-    \begin{cvitem}[Envelope][4]
-        \textbf{Email}\\
-        \href{mailto:bayram.ekrem.007@gmail.com}{\texttt{\uline{bayram.ekrem.007@gmail.com}}}
-    \end{cvitem}
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
 
-    \cvseparator[3]
-    \begin{cvitem}[Phone][4]
-        \textbf{Phone}\\
-        \href{tel:+905511819587}{\texttt{\uline{+90 551 181 9587}}}
-    \end{cvitem}
+\cvsect{Education}
 
-    \cvseparator[3]
-    \begin{cvitem}[Github][4]
-        \textbf{GitHub}\\
-        \href{https://www.github.com/ekrem-qb}{\texttt{\uline{github.com/ekrem-qb}}}
-    \end{cvitem}
+\begin{entrylist}
+    \entry
+    {2022}
+    {Bachelor of Engineering}
+    {Akdeniz University}
+    {Additional Courses: Unity 3D • Arduino • Game Art}
+\end{entrylist}
 
-    \cvseparator[3]
-    \begin{cvitem}[Linkedin][4]
-        \textbf{LinkedIn}\\
-        \href{https://www.linkedin.com/in/ekrem-qb}{\texttt{\uline{linkedin.com/in/ekrem-qb}}}
-    \end{cvitem}
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
 
+\cvsect{Experience}
 
-    \cvsection[skills]{Skills}  %-----------------------------------------------------------
+\begin{entrylist}
+    \entry
+    {2025}
+    {Gapopa Messenger}
+    {team113}
+    {
 
-    \begin{cvitem}
-        C\#
-    \end{cvitem}
+        • Contributed to the development of \textbf{Gapopa Messenger}, a cross-platform communication app offering instant messaging as well as high-quality voice and video calling.
 
-    \cvseparator
-    \begin{cvitem}
-        Unity 3D
-    \end{cvitem}
+        • Implemented redesigned UI for selected components, enhancing the app’s look and user interaction.
 
-    \cvseparator
-    \begin{cvitem}
-        Unreal Engine
-    \end{cvitem}
+        • Updated and fixed existing end-to-end \textbf{Gherkin} tests to ensure compatibility with redesigned components and smooth feature performance.
+        \\
+        \\
+        \href{https://gapopa.org/}{\uline{Web Site}}
+        •
+        \href{https://play.google.com/store/apps/details?id=com.team113.messenger}{\uline{Google Play}}
+        •
+        \href{https://apps.apple.com/us/app/gapopa/id6444211477}{\uline{App Store}}
+        •
+        \href{https://github.com/team113/messenger}{\uline{GitHub}}
+        \\
+    }
+    \entry
+    {2024 -- 2025}
+    {Big B}
+    {Bee}
+    {
 
-    \cvseparator
-    \begin{cvitem}
-        JavaScript
-    \end{cvitem}
+        • Developed a robust \textbf{employee quality control} platform featuring a time-stamped audio player, \textbf{AI}-powered \textbf{STT} (speech-to-text), and integrated \textbf{LLM} (large language model) capabilities.
 
-    \cvseparator
-    \begin{cvitem}
-        Flutter Dart
-    \end{cvitem}
+        • Applied the \textbf{BloC} pattern in Flutter for state management and integrated \textbf{Supabase} for backend services and real-time updates.
 
-    \cvseparator
-    \begin{cvitem}
-        Arduino
-    \end{cvitem}
+        • Designed and optimized \textbf{PostgreSQL} schemas for structured relational data storage.
 
-    \cvseparator
-    \begin{cvitem}
-        HTML
-    \end{cvitem}
+        • Implemented backend services using \textbf{.NET (C\#)}, \textbf{Python}, and \textbf{Dart}.
 
-    \cvseparator
-    \begin{cvitem}
-        CSS
-    \end{cvitem}
+        • Designed and developed responsive frontend interfaces using \textbf{Flutter} and \textbf{Dart}.
+        \\
+        \\
+        \href{https://github.com/ekrem-qb/big_b_flutter}{\uline{GitHub (Frontend source code)}}
+        \\
+    }
+    \entry
+    {2023}
+    {Math Scanner}
+    {Personal Project}
+    {
 
-    \cvseparator
-    \begin{cvitem}
-        LaTeX
-    \end{cvitem}
+    • Developed an application that allows users to take screenshots and extract mathematical expressions using \textbf{OCR} (optical character recognition).
 
-    \cvseparator
-    \begin{cvitem}
-        NodeJS
-    \end{cvitem}
+    • Implemented rendering of recognized mathematical expressions as \textbf{LaTeX} equations, enhancing the clarity and usability of extracted data.
 
-    \cvseparator
-    \begin{cvitem}
-        ElectronJS
-    \end{cvitem}
+    • Adapted the application for multiple platforms, including \textbf{Windows} and \textbf{Linux}, ensuring broad accessibility.
+    \\
+    \\
+    {\href{https://www.github.com/ekrem-qb/math_scan}{\uline{GitHub}}}
+    \\
+    }
+    \entry
+    {2023}
+    {Train}
+    {Enot Games}
+    {
 
-    \cvseparator
-    \begin{cvitem}
-        Git
-    \end{cvitem}
+        • Developed a narrative-driven puzzle-adventure game inspired by \textbf{Source Code} (2011) with mechanics similar to \textbf{Twelve Minutes} (2021).
 
-    \cvseparator
-    \begin{cvitem}
-        Supabase
-    \end{cvitem}
+        • Implemented a time loop mechanic for reliving an ten-minute sequence, enabling dynamic player choices and outcomes.
 
-    \cvseparator
-    \begin{cvitem}
-        SQL
-    \end{cvitem}
+        • Designed top-down point-and-click interactions and branching dialogue trees for immersive gameplay.
 
-    \cvseparator
-    \begin{cvitem}
-        Firebase
-    \end{cvitem}
+        • Engineered multiple endings based on player decisions to enhance replayability.
 
-    \cvseparator
-    \begin{cvitem}
-        REST API
-    \end{cvitem}
+        • Utilized \textbf{Unity} and \textbf{C\#} for cross-platform development, ensuring smooth performance.
+    }
+    \entry
+    {2023}
+    {TeamsDownloader}
+    {Personal Project}
+    {
 
-    \cvseparator
-    \begin{cvitem}
-        Docker
-    \end{cvitem}
+    • Developed a command-line tool for downloading video recordings from \textbf{Microsoft Teams}.
 
-    \cvseparator
-    \begin{cvitem}
-        C
-    \end{cvitem}
+    • Implemented using \textbf{.NET Core} to ensure cross-platform compatibility and performance.
 
-    \cvseparator
-    \begin{cvitem}
-        C++
-    \end{cvitem}
+    • Utilized \textbf{Microsoft Graph API} for secure and efficient access to \textbf{Teams} recordings.
 
+    • Supported downloading various video formats directly from \textbf{Teams} to local storage.
 
-    \cvsection[languages]{Languages}  %--------------------------------------------------------
+    • Improved fetching efficiency by parallelizing, achieving a \textbf{20x speed boost} (v0.0.2).
+    \\
+    \\
+    {\href{https://www.github.com/ekrem-qb/TeamsDownloader}{\uline{GitHub}}}
+    \\
+    }
+    \entry
+    {2023}
+    {Kirbilly PC Port}
+    {Enot Games}
+    {
 
-    \cvskill{Russian}{Native}{1.0}
-    \cvskill{Turkish}{Proficient}{0.9}
-    \cvskill{English}{Upper-Intermediate}{0.6}
+        • Ported \textbf{Kirbilly} from mobile to PC using \textbf{Unreal Engine}.
 
+        • Adapted controls and UI for mouse and keyboard, ensuring a smooth transition from touch-based input.
 
-\end{cv}
+        • Reimplemented procedural physics-based animations in \textbf{Unreal Engine}.
+        \\
+    }
+    \entry
+    {2022}
+    {T-shirt designing app}
+    {Enot Games}
+    {
+
+        • Developed a t-shirt designing application inspired by \href{https://www.tisho.com}{\uline{tisho.com}} and \href{https://www.vsemayki.ru}{\uline{vsemayki.ru}}, integrated into a vending machine.
+
+        • Implemented a custom t-shirt design editor allowing users to create designs using text, predefined elements, or personal images.
+
+        • Utilized \textbf{Python} and \textbf{AI} for automatic background removal from photos.
+
+        • Utilized \textbf{NodeJS} to enable image uploads from a phone to a vending machine over \textbf{Wi-Fi} without an internet connection.
+
+        • Utilized \textbf{Flutter} for app development, ensuring smooth performance and cross-platform compatibility.
+        \\
+        \\
+        \href{https://www.github.com/ekrem-qb/tshirt}{\uline{GitHub (Frontend source code)}}
+        \\
+    }
+    \entry
+    {2022}
+    {Kirbilly}
+    {Enot Games}
+    {
+
+    • Developed a mobile action-adventure game featuring complex character abilities and diverse NPC behaviors.
+
+    • Implemented \textbf{procedural} movement, item interaction, and combat mechanics, including shooting, melee attacks, and fall damage effects.
+
+    • Engineered \textbf{physics-based animations} for realistic character interactions, enhancing immersion and dynamic responses to the game environment.
+
+    • Designed various NPC behaviors, such as patrolling gangsters, box-carrying workers, casual pedestrians, and explosive chickens, each with unique reactions to player actions.
+
+    • Created interactive level elements like movable objects, levers, platforms, and destructible items to enhance gameplay variety and challenge.
+
+    • Adapted game interactions for mobile devices, streamlining controls for picking up and throwing items, using weapons, and navigating levels.
+
+    • Integrated \textbf{in-app purchases} and \textbf{ads}, including rewarded ads for unlocking levels and removing ads, to enhance monetization.
+
+    • Integrated player \textbf{analytics} to track level progress, ad interactions, in-app purchases, and other key gameplay events.
+
+    • Utilized \textbf{Unity} and \textbf{C\#} for cross-platform development, ensuring smooth performance and efficient adaptation for mobile controls.
+    \\
+    \\
+    {\href{https://apkpure.com/ru/kirbilly-human-ragdoll-fall/com.EnotGame.Kirbilly}{\uline{Story Version}}} •
+    {\href{https://apkpure.com/ru/stick-monster-ragdoll-gang-3d/com.EnotGame.StickMonsterRagdollGang}{\uline{Arcade Version}}}
+    \\
+    }
+    \entry
+    {2021}
+    {2048 Miles per Hour}
+    {Enot Games}
+    {
+
+        • Developed a runner game combining mechanics of \textbf{2048} with high-speed gameplay, where stacking cubes accelerates the player's speed.
+
+        • Implemented intuitive swipe controls for seamless cube movement and stacking, enhancing user experience on mobile devices.
+
+        • Engineered a \textbf{procedural} track generation system featuring variable curves and layouts, inspired by \textbf{Audiosurf}, to maintain player engagement.
+
+        • Enhanced game challenge by adjusting track difficulty as the player's cube number and speed increase, with longer distances between objects and more obstacles.
+
+        • Implemented dramatic visual effects for player death, where cubes scatter forward, adding to the intensity and visual appeal of the game.
+
+        • Utilized \textbf{Unity} and \textbf{C\#} for cross-platform development, ensuring smooth performance and efficient adaptation for mobile controls.
+        \\
+        \\
+        \href{https://apkpure.com/ru/2048-miles-per-hour/com.lazredgame.MilesperHour2048}{\uline{Android Version}}
+        \\
+    }
+    \entry
+    {2021}
+    {Medical Record Management System}
+    {Personal Project}
+    {
+
+    • Developed a comprehensive \textbf{medical record management} system aimed at improving healthcare service efficiency for a health insurance company.
+
+    • Implemented features for storing, retrieving, and managing patient records, including personal information, medical history, and treatment plans.
+
+    • Implemented an employee permissions control panel to manage access rights and ensure data security.
+
+    • Utilized \textbf{ElectronJS} for creating a cross-platform desktop application with a seamless user experience.
+
+    • Utilized \textbf{Firebase Database} for efficient data storage and retrieval, allowing for quick access to patient records.
+
+    • Utilized \textbf{Firebase Authentication} for secure user authentication and management.
+    \\
+    \\
+    {\href{https://github.com/ekrem-qb/Medicline}{\uline{GitHub}}}
+    \\
+    }
+    \entry
+    {2020}
+    {Towers.io}
+    {Enot Games}
+    {
+
+        • Developed a mobile \textbf{battle royale} game featuring dynamic platform merging and strategic turret management.
+
+        • Designed a unique gameplay mechanic where players control a floating platform equipped with a turret, collecting and attaching neutral towers to increase size and firepower.
+
+        • Implemented smooth platform controls with realistic inertia and turning mechanics, providing an intuitive and engaging player experience.
+
+        • Engineered automatic turret targeting and firing systems, enhancing combat strategy and player engagement.
+
+        • Created diverse turret types including machine guns, rocket launchers, sniper turrets, and support towers to offer varied strategic options.
+
+        • Developed an intelligent enemy \textbf{AI} that adapts to the player's platform size and health, creating challenging and dynamic encounters.
+
+        • Designed a shrinking play zone to increase game intensity and urgency, inspired by classic battle royale mechanics.
+
+        • Utilized \textbf{Unity} and \textbf{C\#} for cross-platform development, ensuring seamless performance and efficient adaptation for mobile devices.
+        \\
+        \\
+        \href{https://apkpure.com/ru/tower-raft-io/com.lazredgame.Tower.IO}{\uline{Android Version}}
+        \\
+    }
+    \entry
+    {2018}
+    {Minecrash}
+    {Personal Project}
+    {
+
+        • Developed an engaging arcade \textbf{puzzle} game.
+
+        • Implemented match-3 game mechanics, allowing players to align blocks and treasures to progress through levels and unlock special abilities.
+
+        • Designed challenging levels with increasing difficulty, incorporating various obstacles and power-ups to maintain player interest.
+
+        • Engineered an addictive gameplay loop with high replayability, encouraging players to achieve higher scores.
+
+        • Integrated in-game advertising seamlessly using \textbf{Google AdMob} and \textbf{Appodeal}, providing revenue opportunities while maintaining player immersion.
+
+        • Utilized \textbf{Unity} and \textbf{C\#} for seamless performance on Android platform, ensuring a smooth and responsive gameplay experience.
+        \\
+        \\
+        \href{https://apkpure.com/ru/minecrash/com.ekrem.game.minecrash}{\uline{Android Version}}
+        •
+        \href{https://ekrembayram.itch.io/minecrash}{\uline{Web Version}}
+        \\
+    }
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
 
 \end{document}
-
